@@ -1,0 +1,27 @@
+@mixin backgroundColor($color) {
+  background-color: $color;
+}
+
+@mixin textColor($color) {
+  color: $color;
+}
+
+@mixin fontSize($fontSize) {
+  font-size: $fontSize;
+}
+
+@mixin fontWeight($fontWeight) {
+  font-weight: $fontWeight;
+}
+
+@mixin fontFamily($fontFamily) {
+  font-weight: $fontFamily;
+}
+
+@mixin borderColor($color) {
+  border-color: $color;
+}
+
+@mixin zIndex($index) {
+  z-index: $index;
+}

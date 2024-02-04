@@ -1,0 +1,28 @@
+$steps: @steps;
+$final: @final;
+
+@for $i from 0 through #{$final}/#{$steps} {
+  .p-#{$i} {
+    padding: #{$i * $steps}px;
+  }
+  .px-#{$i} {
+    padding-left: #{$i * $steps}px;
+    padding-right: #{$i * $steps}px;
+  }
+  .py-#{$i} {
+    padding-top: #{$i * $steps}px;
+    padding-bottom: #{$i * $steps}px;
+  }
+  .pl-#{$i} {
+    padding-left: #{$i * $steps}px;
+  }
+  .pr-#{$i} {
+    padding-right: #{$i * $steps}px;
+  }
+  .pt-#{$i} {
+    padding-top: #{$i * $steps}px;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i * $steps}px;
+  }
+}

@@ -1,0 +1,6 @@
+@import '../../../../../globals/styles/colors';
+@import '../../../../../globals/styles/mixins';
+
+.button {
+  @include backgroundColor($nebula-blue);
+}

@@ -1,0 +1,25 @@
+{
+  "name": "generators",
+  "version": "1.0.0",
+  "description": "This generates all scss classes ",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup index.ts --format cjs,esm --dts && npm run start",
+    "start": "node dist/index.js"
+  },
+  "files": [
+    "dist/**"
+  ],
+  "dependencies": {
+    "tokens": "*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "tsup": "^8.0.1"
+  }
+}

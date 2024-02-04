@@ -1,0 +1,28 @@
+$steps: @steps;
+$final: @final;
+
+@for $i from 0 through #{$final}/#{$steps} {
+  .m-#{$i} {
+    margin: #{$i * $steps}px;
+  }
+  .mx-#{$i} {
+    margin-left: #{$i * $steps}px;
+    margin-right: #{$i * $steps}px;
+  }
+  .my-#{$i} {
+    margin-top: #{$i * $steps}px;
+    margin-bottom: #{$i * $steps}px;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i * $steps}px;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i * $steps}px;
+  }
+  .mt-#{$i} {
+    margin-top: #{$i * $steps}px;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i * $steps}px;
+  }
+}
