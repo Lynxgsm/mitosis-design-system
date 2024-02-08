@@ -1,21 +1,15 @@
 import { useStore } from '@builder.io/mitosis';
-import { Color } from 'typings';
-import './button.scss';
+import './button.module.scss';
+import { ButtonProps } from './button.type';
 
-type Props = {
-  message: string;
-  backgroundColor: Color;
-};
-
-export default function DSEButton(props: Props) {
+export default function Button(props: ButtonProps) {
   const state = useStore({
-    name: 'Hello World',
+    name: 'Hello Youth',
   });
 
   return (
-    <div class={`button`}>
+    <div class={`button button-lg`}>
       {props.message || 'Hello'} {state.name}! I can run in React, Vue, Solid or
-      Svelte!
     </div>
   );
 }

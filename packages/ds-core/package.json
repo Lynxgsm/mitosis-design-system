@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typings": "*"
+    "typings": "*",
+    "generators": "*"
   },
   "devDependencies": {
     "@builder.io/mitosis": "^0.0.144",

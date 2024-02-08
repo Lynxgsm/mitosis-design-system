@@ -1,6 +1,6 @@
 import { resolve } from 'path';
 
-const BASE_STYLE_PATH = resolve(__dirname, '..', '..', 'styles');
+const BASE_STYLE_PATH = resolve(__dirname, '..', '..', 'styles', 'base');
 const BASE_TEMPLATE_PATH = resolve(__dirname, '..', 'templates');
 
 export type StylePaths = {

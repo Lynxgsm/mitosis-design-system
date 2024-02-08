@@ -1,3 +1,2 @@
-import { ColorValues } from '../tokens/colors';
-
-export type Color = (typeof ColorValues)[number];
+export type { ButtonProps } from './components/button.props';
+export type { Color } from './base/colors';
