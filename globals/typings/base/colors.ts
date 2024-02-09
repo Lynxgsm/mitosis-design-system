@@ -1,2 +1,2 @@
-import { ColorValues } from 'tokens/colors';
-export type Color = (typeof ColorValues)[number];
+import { ColorTokens } from 'tokens/colors';
+export type Color = (typeof ColorTokens)[number];

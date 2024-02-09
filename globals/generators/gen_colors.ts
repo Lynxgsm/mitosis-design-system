@@ -1,10 +1,12 @@
 import { writeFileSync } from 'fs';
-import { ColorValues } from '../tokens/colors';
+import { ColorValues } from 'ds-values';
 import { STYLES } from './utils/paths';
+import { Color } from 'typings';
 
 export const generateColors = () => {
-  // Create colors file
-  const colorValues = Object.keys(ColorValues).reduce((a, c) => {
+  // Create color files
+  const colorValues = Object.keys(ColorValues).reduce((a, current) => {
+    const c = current as Color;
     return `${a}\n$${c}:${ColorValues[c]};`;
   }, '');
 

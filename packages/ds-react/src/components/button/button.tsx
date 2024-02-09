@@ -1,6 +1,7 @@
 "use client";
 import * as React from "react";
 import { useState } from "react";
+import { ButtonProps } from "typings";
 
 function Button(props: ButtonProps) {
   const [name, setName] = useState(() => "Hello Youth");

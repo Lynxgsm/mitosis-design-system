@@ -2,6 +2,7 @@ import {
   BEFORE_REACT_PACKAGE,
   REACT_COMPONENTS,
   REACT_PACKAGE,
+  REACT_SRC,
 } from '../constants/paths';
 import {
   copy,
@@ -38,14 +39,31 @@ export const copyReactPackageContent = async () => {
 export const createIndexFile = async () => {
   const components = listComponents();
   let indexContent = '';
+  let exportComponents = '';
 
   for (let c of components) {
     indexContent =
       indexContent +
-      `import {${c.component}} from './src/components/${c.name}/${c.name}'\n`;
+      `import ${c.component} from './components/${c.name}/${c.name}'\n`;
   }
 
-  writeFileSync(resolve(REACT_PACKAGE, 'index.tsx'), indexContent);
+  exportComponents = generateExport(components);
+
+  writeFileSync(
+    resolve(REACT_SRC, 'index.ts'),
+    `${indexContent}\n\n${exportComponents}`
+  );
+};
+
+export const generateExport = (
+  components: { component: string; name: string }[]
+) => {
+  let content = 'export {';
+
+  for (let { component } of components) {
+    content = content + component + ',\n';
+  }
+  return `${content}}`;
 };
 
 const listComponents = () => {

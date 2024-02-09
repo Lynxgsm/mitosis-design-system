@@ -1,5 +1,1 @@
-export const breakpoints = {
-  sm: 767,
-  md: 991,
-  lg: 1247,
-};
+export const breakpoints = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'] as const;
