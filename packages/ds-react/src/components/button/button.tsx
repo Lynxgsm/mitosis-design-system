@@ -2,6 +2,7 @@
 import * as React from "react";
 import { useState } from "react";
 import { ButtonProps } from "typings";
+import "styles/dist/button.css";
 
 function Button(props: ButtonProps) {
   const [name, setName] = useState(() => "Hello Youth");

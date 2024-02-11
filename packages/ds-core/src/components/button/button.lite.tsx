@@ -1,5 +1,6 @@
 import { useStore } from '@builder.io/mitosis';
 import { ButtonProps } from 'typings';
+import 'styles/dist/button.css';
 
 export default function Button(props: ButtonProps) {
   const state = useStore({

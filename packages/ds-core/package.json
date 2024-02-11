@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "typings": "*",
-    "generators": "*"
+    "generators": "*",
+    "styles": "*"
   },
   "devDependencies": {
     "@builder.io/mitosis": "^0.0.144",
