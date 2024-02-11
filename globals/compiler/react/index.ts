@@ -36,6 +36,10 @@ export const copyReactPackageContent = async () => {
   }
 };
 
+const styleImport = () => {
+  return `import 'styles/dist/index.css'`;
+};
+
 export const createIndexFile = async () => {
   const components = listComponents();
   let indexContent = '';
@@ -48,10 +52,11 @@ export const createIndexFile = async () => {
   }
 
   exportComponents = generateExport(components);
+  const styleIndex = styleImport();
 
   writeFileSync(
     resolve(REACT_SRC, 'index.ts'),
-    `${indexContent}\n\n${exportComponents}`
+    `${indexContent}\n\n${styleIndex}\n\n${exportComponents}`
   );
 };
 

@@ -2,15 +2,15 @@
   "name": "styles",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass main.scss dist/index.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "rollup": "^4.10.0",
-    "rollup-plugin-sass": "^1.12.21"
+    "sass": "^1.70.0"
   }
 }

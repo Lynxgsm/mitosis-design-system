@@ -8,7 +8,7 @@ export default function Button(props: ButtonProps) {
 
   return (
     <button
-      class={`button button-lg ${props.backgroundColor} ${props.className}`}
+      class={`ds-button button-lg ${props.backgroundColor} ${props.className}`}
     >
       {props.message || 'Hello'} {state.name}! I can run in React, Vue, Solid or
     </button>
