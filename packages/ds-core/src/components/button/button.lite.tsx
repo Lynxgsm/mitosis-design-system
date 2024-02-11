@@ -7,8 +7,10 @@ export default function Button(props: ButtonProps) {
   });
 
   return (
-    <div class={`button button-lg`}>
+    <button
+      class={`button button-lg ${props.backgroundColor} ${props.className}`}
+    >
       {props.message || 'Hello'} {state.name}! I can run in React, Vue, Solid or
-    </div>
+    </button>
   );
 }

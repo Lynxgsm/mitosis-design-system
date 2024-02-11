@@ -7,10 +7,12 @@ function Button(props: ButtonProps) {
   const [name, setName] = useState(() => "Hello Youth");
 
   return (
-    <div className={`button button-lg`}>
+    <button
+      className={`button button-lg ${props.backgroundColor} ${props.className}`}
+    >
       {props.message || "Hello"}
       {name}! I can run in React, Vue, Solid or
-    </div>
+    </button>
   );
 }
 

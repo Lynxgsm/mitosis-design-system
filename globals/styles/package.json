@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^4.10.0",
+    "rollup-plugin-sass": "^1.12.21"
+  }
 }
