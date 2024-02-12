@@ -1,16 +1,13 @@
 {
   "name": "ds-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a react export component from Mitosis",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "dist/**"
   ],
-  "directories": {
-    "src": "src"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup src/index.ts --format cjs,esm --dts",

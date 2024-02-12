@@ -4,4 +4,30 @@
 button.ds-button {
   border: 1px solid black;
   padding: 2rem;
+
+  // SIZES
+  &.button-xxl {
+    font-size: 48px;
+  }
+  &.button-xl {
+    font-size: 36px;
+  }
+  &.button-lg {
+    font-size: 20px;
+  }
+  &.button-md {
+    font-size: 14px;
+  }
+  &.button-sm {
+    font-size: 12px;
+  }
+  &.button-xs {
+    font-size: 8px;
+  }
+  &.button-black {
+    background: #000;
+  }
+  &.button-supernova {
+    @include backgroundColor($supernova);
+  }
 }

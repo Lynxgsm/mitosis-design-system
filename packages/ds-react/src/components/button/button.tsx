@@ -9,7 +9,9 @@ function Button(props: ButtonProps) {
 
   return (
     <button
-      className={`ds-button button-lg ${props.backgroundColor} ${props.className}`}
+      className={`ds-button button-${props.size ?? "md"} button-${
+        props.backgroundColor ?? "black"
+      } ${props.className ?? ""}`}
     >
       {props.message || "Hello"}
       {name}! I can run in React, Vue, Solid or
